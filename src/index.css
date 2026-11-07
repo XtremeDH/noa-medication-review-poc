@@ -1,0 +1,74 @@
+@import "tailwindcss";
+@import "@fontsource/roboto/latin-400.css";
+@import "@fontsource/roboto/latin-500.css";
+@import "@fontsource/roboto/latin-700.css";
+
+/* Layout and components follow the Docviser screenshots; colours use the Docplanner brand (#00C3A5). */
+@theme {
+  --font-sans: "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --color-brand-50: #e6f9f6;
+  --color-brand-100: #c2f0e8;
+  --color-brand-200: #8fe3d4;
+  --color-brand-500: #00c3a5;
+  --color-brand-600: #00a88e;
+  --color-brand-700: #00826e;
+  --color-brand-800: #006656;
+
+  --color-ink: #1f2328;
+  --color-ink-2: #4b5157;
+  --color-ink-3: #6b7178;
+  --color-line: #e2e5e9;
+  --color-line-strong: #c9ced4;
+  --color-canvas: #f6f7f9;
+  --color-sidebar: #f1f3f5;
+  --color-tint: #eef0f3;
+
+  --color-major: #c5221f;
+  --color-major-bg: #fce8e6;
+  --color-moderate: #9a4f00;
+  --color-moderate-bg: #fef3e0;
+  --color-minor: #4b5157;
+  --color-minor-bg: #eef0f3;
+  --color-judge: #5b3fb0;
+  --color-judge-bg: #efeafb;
+  --color-idchip: #6b5000;
+  --color-idchip-bg: #fbeec2;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0ms !important;
+    animation-duration: 0ms !important;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(24px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 200ms ease-out;
+}
