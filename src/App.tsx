@@ -1,6 +1,7 @@
 import { CircleCheck } from 'lucide-react';
 import { PATIENTS } from './data/patients';
 import { useLang } from './i18n';
+import { ArchitecturePage } from './pages/ArchitecturePage';
 import { AuditPage } from './pages/AuditPage';
 import { EvalPage } from './pages/EvalPage';
 import { PatientPage } from './pages/PatientPage';
@@ -35,6 +36,10 @@ export function App() {
     case 'audit':
       crumbs = [{ label: t('Auditoría', 'Audit') }];
       page = <AuditPage />;
+      break;
+    case 'architecture':
+      crumbs = [{ label: t('Arquitectura IA', 'AI architecture') }];
+      page = <ArchitecturePage />;
       break;
     default:
       crumbs = [{ label: t('Pacientes', 'Patients') }, { label: t('Consultas de hoy', "Today's visits") }];

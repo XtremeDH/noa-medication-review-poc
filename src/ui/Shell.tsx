@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import {
-  BookOpen, Calendar, ChevronRight, CircleHelp, FlaskConical, History, LayoutGrid, ListChecks, Mic, PanelLeft, Search, Settings, Users,
+  BookOpen, Calendar, ChevronRight, CircleHelp, FlaskConical, History, LayoutGrid, ListChecks, Mic, Network, PanelLeft, Search, Settings, Users,
 } from 'lucide-react';
 import type { Lang } from '../domain/lang';
 import { useLang } from '../i18n';
@@ -14,6 +14,7 @@ const NAV: { es: string; en: string; icon: ReactNode; view?: View['name']; guide
   { es: 'Reglas clínicas', en: 'Clinical rules', icon: <ListChecks className="size-[18px]" />, view: 'rules' },
   { es: 'Evaluación', en: 'Evaluation', icon: <FlaskConical className="size-[18px]" />, view: 'eval' },
   { es: 'Auditoría', en: 'Audit', icon: <History className="size-[18px]" />, view: 'audit' },
+  { es: 'Arquitectura IA', en: 'AI architecture', icon: <Network className="size-[18px]" />, view: 'architecture' },
   { es: 'Manual de uso', en: 'User guide', icon: <BookOpen className="size-[18px]" />, guide: true },
 ];
 

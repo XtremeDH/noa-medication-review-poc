@@ -129,6 +129,11 @@ const STEPS: Step[] = [
     en: ['Audit', 'Every review leaves a trace: versions, stages, route and every doctor action, with the patient pseudonymised.'],
   },
   {
+    target: 'arch', view: { name: 'architecture' },
+    es: ['Arquitectura IA', 'El mapa del sistema: pulse cualquier caja del diagrama para ver qué hace, sus prompts, sus puertas, qué se monitoriza y qué experimentos A/B lo mejoran. Las pestañas detallan prompts, puertas, monitorización y pruebas A/B.'],
+    en: ['AI architecture', 'The system map: click any box in the diagram to see what it does, its prompts, its gates, what is monitored and which A/B experiments improve it. The tabs detail prompts, gates, monitoring and A/B tests.'],
+  },
+  {
     target: 'help', view: PATIENTS,
     es: ['Volver a ver la guía', 'Pulse este botón, o Manual de uso en el menú, cuando quiera repetir la guía.'],
     en: ['See the guide again', 'Click this button, or User guide in the menu, whenever you want to replay the guide.'],

@@ -7,7 +7,8 @@ export type View =
   | { name: 'patient'; id: string }
   | { name: 'rules' }
   | { name: 'eval' }
-  | { name: 'audit' };
+  | { name: 'audit' }
+  | { name: 'architecture' };
 
 export type ActionKind = 'accepted' | 'modified' | 'dismissed';
 
